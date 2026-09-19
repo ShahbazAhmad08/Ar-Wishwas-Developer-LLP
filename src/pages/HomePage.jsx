@@ -634,12 +634,15 @@ export const HomePage = ({ onOpenSiteVisit }) => {
       </section>
 
       {/* 8. SCHEDULE VISIT CTA */}
-      <section className="py-16 bg-gradient-to-r from-[#0B1A38] to-[#10244D] text-white">
+      <section className="py-16 bg-gradient-to-r from-[#0B1A38] via-[#10244D] to-[#0B1A38] text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold">
-            Apna Plot Choose Karne Ke Liye Aaj Hi Site Visit Book Karein
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-white leading-tight">
+            Apna Plot Choose Karne Ke Liye Aaj Hi <br className="hidden sm:inline" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-200 italic font-serif">
+              Site Visit Book Karein
+            </span>
           </h2>
-          <p className="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="text-slate-200 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
             Senior property consultant aapko complete colony inspection karwayenge aur official Registry & Dakhil Kharij papers verify karwayenge.
           </p>
           <div className="flex flex-wrap justify-center gap-4 pt-2">
