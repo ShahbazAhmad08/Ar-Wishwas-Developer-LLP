@@ -5,7 +5,7 @@ export const COMPANY_INFO = {
   name: "Ar Wishwas Developer LLP",
   shortName: "Ar Wishwas",
   tagline: "Trust • Commitment • Growth",
-  hindiTagline: "Prayagraj & Kaushambi Me Aapke Sapno Ka Aashiyana – 100% Verified Gated Society Plots",
+  englishTagline: "Premier Gated Society Plots in Prayagraj & Kaushambi – 100% Verified Legal Land",
   phone: "+91 98765 43210",
   phoneRaw: "9876543210",
   whatsapp: "919876543210",
@@ -82,8 +82,8 @@ export const CORE_AMENITIES = [
   {
     id: "registry",
     icon: "FileCheck",
-    title: "Immediate Registry & Dakhil Kharij",
-    desc: "100% Clear Title, 143 Section approved, instant registry on complete payment."
+    title: "Immediate Registry & Revenue Mutation",
+    desc: "100% clear title, Section 143 non-agricultural certified, instant registry upon final payment."
   }
 ];
 
@@ -145,7 +145,7 @@ export const SITES_DATA = [
       "Just 3 km from Bamrauli Airport (Prayagraj Civil Enclave)",
       "40 ft Main Entrance Road & 30 ft Internal Paver Roads",
       "SBI & PNB Bank Loan Assistance Available",
-      "100% Freehold Land with Instant Registry & Dakhil Kharij"
+      "100% Freehold Land with Instant Registry & Revenue Mutation Guarantee"
     ],
     distances: [
       { place: "Bamrauli Airport", dist: "3.2 km", time: "6 mins", icon: "Plane" },
@@ -295,7 +295,7 @@ export const SITES_DATA = [
     highlights: [
       "Zero-distance direct approach from Kanpur-Prayagraj 6-lane NH-19",
       "Ideal for Hotels, Godowns, Commercial Showrooms & Gated Villas",
-      "Immediate Registry with Dakhil-Kharij Guarantee on Paper",
+      "Immediate Registry with Official Revenue Mutation Guarantee on Paper",
       "Heavy commercial vehicle access with 45ft Entrance Boulevard"
     ],
     distances: [
@@ -333,8 +333,8 @@ export const ROI_DATA = {
       desc: "Seamless connectivity directly linking Kaushambi NH-19 to Prayagraj, Varanasi, and Lucknow."
     },
     {
-      title: "100% Registry & Dakhil Kharij Security",
-      desc: "Clear legal papers assure worry-free double-digit annual appreciation with easy resale liquidity."
+      title: "100% Registry & Revenue Mutation Guarantee",
+      desc: "Clear legal documentation assures worry-free double-digit annual appreciation with high resale liquidity."
     }
   ]
 };
@@ -342,9 +342,9 @@ export const ROI_DATA = {
 export const TESTIMONIALS = [
   {
     name: "Er. Alok Srivastava",
-    role: "Senior Engineer, Railways",
+    role: "Senior Engineer, Indian Railways",
     site: "Wishwas Green City, Prayagraj",
-    review: "Maine Wishwas Green City me 150 sq.yd ka plot liya tha. Registry aur Dakhil Kharij bilkul smooth tha. 30ft interlocking road aur boundary ban chuki hai. Very happy with Ar Wishwas Developer team!",
+    review: "I acquired a 150 sq.yd residential plot in Wishwas Green City. The registry and revenue mutation were executed flawlessly. The 30ft interlocking roads and perimeter security wall are top-tier. Exceptional experience with Ar Wishwas Developer LLP!",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
   },
@@ -352,15 +352,15 @@ export const TESTIMONIALS = [
     name: "Dr. Rajeshwar Tripathi",
     role: "Medical Practitioner",
     site: "Wishwas Royal Enclave, Jhalwa",
-    review: "Jhalwa IIIT ke paas peaceful gated colony dhoondh raha tha. Ar Wishwas ne bank finance karwaya aur rate bhi genuine tha. Plot par turant kabza mila. Inka commitment 100% sachha hai.",
+    review: "I was looking for a peaceful, secure gated township near IIIT Allahabad. Ar Wishwas facilitated the nationalized bank loan effortlessly with complete price transparency. Received on-ground physical possession immediately.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80"
   },
   {
     name: "Sunil Kumar Patel",
-    role: "Business Owner",
+    role: "Enterprise Business Owner",
     site: "Wishwas Residency, Kaushambi NH-19",
-    review: "Highway touch plot lene ka mera decision best nikla. Ek saal ke andar hi plot ki value 30% badh chuki hai. LLP company hone ki wajah se poora paperwork clean aur transparent hai.",
+    review: "Investing in a commercial highway-touch parcel at Wishwas Residency turned out to be our highest-yielding asset. Land value surged over 30% within a year. Being an LLP entity, their title records and legal compliance are 100% pristine.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80"
   }

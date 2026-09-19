@@ -113,7 +113,7 @@ export const Navbar = ({ onOpenSiteVisit }) => {
             <motion.a
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Namaste Ar Wishwas Developer Team, mujhe plots ke bare me consultation chahiye.")}`}
+              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Hello Ar Wishwas Developer LLP, I would like to schedule a property consultation.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold tracking-wide transition shadow-md flex items-center gap-1.5"
@@ -172,7 +172,7 @@ export const Navbar = ({ onOpenSiteVisit }) => {
                   <Calendar className="w-4 h-4" /> Schedule Site Visit
                 </button>
                 <a
-                  href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Namaste, mujhe Prayagraj & Kaushambi plots dekhne hain.")}`}
+                  href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Hello Ar Wishwas Developer LLP, I would like to explore your plots in Prayagraj & Kaushambi.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl text-center text-sm shadow flex items-center justify-center gap-2"

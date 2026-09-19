@@ -177,7 +177,7 @@ export const SitesCatalog = ({ onSelectSiteForMap, onOpenSiteDetail, onOpenSiteV
                   </div>
 
                   <a
-                    href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Namaste, mujhe ${site.name} (${site.locationCategory}) ke plots aur site visit ke baare me jaankari chahiye.`)}`}
+                    href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Hello Ar Wishwas Developer LLP, I would like to receive plot pricing and site visit details for ${site.name} (${site.locationCategory}).`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-[#050C1F] hover:bg-slate-900 text-emerald-400 hover:text-emerald-300 border border-emerald-500/30 font-bold py-2 rounded-xl text-xs flex items-center justify-center gap-1.5 transition"

@@ -50,18 +50,18 @@ export const Hero = ({ onOpenSiteVisit, onSelectSiteForMap }) => {
         {/* Main Display Headlines */}
         <div className="text-center max-w-4xl mx-auto space-y-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-extrabold tracking-tight text-white leading-[1.15]">
-            Aapka Sapna, Humara Wishwas!<br />
+            Your Vision, Our Integrity<br />
             <span className="gold-metallic-text italic font-serif">
-              VIP Gated Colony Plots
+              VIP Gated Community Plots
             </span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-sans font-normal leading-relaxed pt-2">
-            Bamrauli Airport Corridor, Jhalwa IIIT, Manjhanpur & NH-19 Highway par 
+            Prime locations across Bamrauli Airport Corridor, Jhalwa IIIT, Manjhanpur & NH-19 Highway with 
             <strong className="text-[#FCE8B2] font-semibold"> 30-40ft Interlocking Roads</strong>, 
-            Bijli, Paani, Boundary aur 
-            <strong className="text-[#FCE8B2] font-semibold"> Instant Bank Finance (SBI / PNB) </strong> 
-            ke saath turant Registry aur Dakhil-Kharij plots.
+            Electricity, Water lines, Boundary Walls, and 
+            <strong className="text-[#FCE8B2] font-semibold"> Pre-Approved Bank Finance (SBI / PNB) </strong> 
+            with immediate Registry and 100% Revenue Mutation guarantee.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export const Hero = ({ onOpenSiteVisit, onSelectSiteForMap }) => {
             className="w-full sm:w-auto bg-gradient-to-r from-[#D4AF37] via-[#F59E0B] to-[#C59A08] hover:from-[#FCE8B2] hover:to-[#D4AF37] text-slate-950 font-sans font-black px-8 py-4 rounded-2xl shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 text-sm tracking-wide cursor-pointer group"
           >
             <Calendar className="w-4 h-4 text-slate-950" />
-            <span>Book Free Site Visit (Free VIP Cab)</span>
+            <span>Schedule Site Visit</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
 
@@ -174,7 +174,7 @@ export const Hero = ({ onOpenSiteVisit, onSelectSiteForMap }) => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div className="luxury-glass p-3.5 rounded-2xl border border-white/5">
             <span className="font-display font-bold text-amber-300 text-lg block">100%</span>
-            <span className="text-[11px] text-slate-400">Immediate Registry & Dakhil Kharij</span>
+            <span className="text-[11px] text-slate-400">Immediate Registry & Revenue Mutation</span>
           </div>
           <div className="luxury-glass p-3.5 rounded-2xl border border-white/5">
             <span className="font-display font-bold text-amber-300 text-lg block">Section 143</span>

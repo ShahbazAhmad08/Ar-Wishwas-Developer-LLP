@@ -23,7 +23,7 @@ export const FloatingActions = ({ onOpenSiteVisit }) => {
         <motion.a
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Namaste Ar Wishwas Developer, mujhe plots ki details chahiye.")}`}
+          href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Hello Ar Wishwas Developer LLP, I would like to inquire about your prime plots in Prayagraj & Kaushambi.")}`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"
@@ -55,7 +55,7 @@ export const FloatingActions = ({ onOpenSiteVisit }) => {
         </button>
 
         <a
-          href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Namaste, mujhe Prayagraj & Kaushambi plots ki details bhejiye.")}`}
+          href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Hello Ar Wishwas Developer LLP, please share details for gated plots in Prayagraj & Kaushambi.")}`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl text-center text-xs flex items-center justify-center gap-1.5 shadow"

@@ -38,7 +38,7 @@ export const RoiCalculator = ({ onOpenSiteVisit }) => {
             Real Estate Appreciation Horizon
           </h2>
           <p className="text-sm sm:text-base text-slate-300 mt-2 font-sans">
-            Mahakumbh infrastructure, Bamrauli Airport expansion aur Outer Ring Road bypass se plot ki keemat ka projected return dekhein.
+            Calculate projected capital appreciation fueled by Mahakumbh corridor infrastructure, Bamrauli Airport expansion, and the Outer Ring Road bypass.
           </p>
         </div>
 

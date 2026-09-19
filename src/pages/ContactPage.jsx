@@ -108,7 +108,7 @@ export const ContactPage = () => {
                 </a>
 
                 <a
-                  href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Namaste,%20mujhe%20direct%20consultant%20se%20baat%20karni%20hai.`}
+                  href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Hello Ar Wishwas Developer LLP, I would like to speak directly with a property director regarding plot inquiries.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition"

@@ -351,7 +351,7 @@ export const InteractivePlotMap = ({ initialSiteId, onOpenSiteVisit }) => {
                     <>
                       <a
                         href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(
-                          `Namaste Ar Wishwas Developer! Mujhe ${currentSite.name} ka Plot No: ${selectedPlot.plotNo} (${selectedPlot.sizeSqYd} sq.yd, ${selectedPlot.facing}, Rate: ₹${selectedPlot.totalPrice.toLocaleString('en-IN')}) reserve karna hai. Kripya process aur token details batayein.`
+                          `Hello Ar Wishwas Developer LLP! I would like to reserve Plot No: ${selectedPlot.plotNo} at ${currentSite.name} (${selectedPlot.sizeSqYd} sq.yd, ${selectedPlot.facing}, Total Valuation: ₹${selectedPlot.totalPrice.toLocaleString('en-IN')}). Please share the token booking process and documentation.`
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -366,15 +366,15 @@ export const InteractivePlotMap = ({ initialSiteId, onOpenSiteVisit }) => {
                         className="w-full bg-gradient-to-r from-[#D4AF37] to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold py-3 rounded-xl text-center text-xs flex items-center justify-center gap-2 shadow transition cursor-pointer"
                       >
                         <Calendar className="w-3.5 h-3.5" />
-                        <span>Book Free VIP Cab to Inspect</span>
+                        <span>Schedule Site Inspection</span>
                       </button>
                     </>
                   ) : selectedPlot.status === 'booked' ? (
                     <div className="bg-amber-950/60 p-3.5 rounded-2xl border border-amber-500/40 text-center text-xs text-amber-300">
-                      <p className="font-bold">Ye plot hold/token par hai.</p>
-                      <p className="text-[11px] text-slate-400 mt-1">Check if waiting list is open for this parcel.</p>
+                      <p className="font-bold">This plot is reserved under token hold.</p>
+                      <p className="text-[11px] text-slate-400 mt-1">Check if the waiting list is open for this parcel.</p>
                       <a
-                        href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Namaste, kya Plot ${selectedPlot.plotNo} available ho sakta hai?`)}`}
+                        href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Hello Ar Wishwas Developer LLP, could you please check if Plot ${selectedPlot.plotNo} is available on the waiting list?`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-2 inline-block text-amber-400 font-bold underline"
@@ -424,7 +424,7 @@ export const InteractivePlotMap = ({ initialSiteId, onOpenSiteVisit }) => {
                   className="w-full bg-[#10244D] hover:bg-[#162D5A] text-[#FCE8B2] border border-[#D4AF37]/40 font-bold py-3 rounded-xl text-xs flex items-center justify-center gap-2 transition cursor-pointer"
                 >
                   <Calendar className="w-3.5 h-3.5 text-[#D4AF37]" />
-                  <span>Book Free Cab Visit</span>
+                  <span>Schedule Site Visit</span>
                 </button>
               </div>
             )}

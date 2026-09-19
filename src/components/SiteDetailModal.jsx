@@ -182,7 +182,7 @@ export const SiteDetailModal = ({ site, onClose, onSelectSiteForMap, onOpenSiteV
             </button>
 
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Namaste, mujhe ${site.name} ka brochure, price sheet aur plot map bhejein.`)}`}
+              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Hello Ar Wishwas Developer LLP, please share the official brochure, price sheet, and layout map for ${site.name}.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2.5 rounded-xl text-xs flex items-center gap-1.5 shadow transition"

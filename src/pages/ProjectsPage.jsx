@@ -181,7 +181,7 @@ export const ProjectsPage = ({ onOpenSiteDetail, onOpenSiteVisit }) => {
                   </div>
 
                   <a
-                    href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Namaste, mujhe ${site.name} (${site.locationCategory}) ke plots ki pricing aur available plot numbers bhejein.`)}`}
+                    href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Hello Ar Wishwas Developer LLP, please share the pricing sheet and current available plot numbers for ${site.name} (${site.locationCategory}).`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-slate-900 hover:bg-slate-800 text-emerald-400 hover:text-emerald-300 font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1.5 transition shadow-sm"

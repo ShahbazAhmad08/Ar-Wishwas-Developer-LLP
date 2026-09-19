@@ -255,7 +255,7 @@ export const EmiCalculator = ({ onOpenSiteVisit }) => {
               {/* WhatsApp Bank Assistance Button */}
               <a
                 href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(
-                  `Namaste, mujhe plot bank loan ke baare me assistance chahiye. Plot Budget: ₹${plotAmount.toLocaleString('en-IN')}, Down Payment: ₹${downPaymentAmount.toLocaleString('en-IN')}, Expected EMI: ₹${emi.toLocaleString('en-IN')}/month.`
+                  `Hello, I would like bank loan and financing assistance for a plot. Plot Budget: ₹${plotAmount.toLocaleString('en-IN')}, Down Payment: ₹${downPaymentAmount.toLocaleString('en-IN')}, Estimated EMI: ₹${emi.toLocaleString('en-IN')}/month.`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

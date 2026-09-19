@@ -272,7 +272,7 @@ export const CalculatorsPage = ({ onOpenSiteVisit }) => {
 
                 <a
                   href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(
-                    `Namaste, mujhe plot bank loan ke baare me assistance chahiye. Plot Budget: ₹${plotAmount.toLocaleString('en-IN')}, Down Payment: ₹${downPaymentAmount.toLocaleString('en-IN')}, Expected EMI: ₹${emi.toLocaleString('en-IN')}/month.`
+                    `Hello Ar Wishwas Developer LLP, I would like guidance on plot bank finance. Plot Budget: ₹${plotAmount.toLocaleString('en-IN')}, Estimated Down Payment: ₹${downPaymentAmount.toLocaleString('en-IN')}, Expected EMI: ₹${emi.toLocaleString('en-IN')}/month.`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"

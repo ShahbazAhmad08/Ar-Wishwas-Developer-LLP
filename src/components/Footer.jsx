@@ -54,7 +54,7 @@ export const Footer = ({ onOpenSiteVisit }) => {
               <BrandLogo size="md" showTagline={false} />
             </div>
             <p className="text-xs text-slate-300 leading-relaxed font-sans pt-1">
-              Prayagraj & Kaushambi's trusted plotted township developer. 100% Khatauni Verified, Section 143 Approved, and Instant Possession with Up to 80% Bank Finance.
+              Prayagraj & Kaushambi's trusted plotted township developer. 100% Verified Land Title, Section 143 Approved, and Instant Possession with Up to 80% Bank Finance.
             </p>
             <div className="flex items-center gap-2 text-[11px] text-amber-400 font-semibold">
               <Shield className="w-4 h-4 text-emerald-400" />
@@ -134,7 +134,7 @@ export const Footer = ({ onOpenSiteVisit }) => {
           <div className="flex items-center gap-4 text-slate-400 font-mono text-[10px]">
             <span>Section 143 Cleared</span>
             <span>•</span>
-            <span>100% Khatauni Mutation</span>
+            <span>100% Revenue Mutation</span>
             <span>•</span>
             <span>Zero Brokerage</span>
           </div>

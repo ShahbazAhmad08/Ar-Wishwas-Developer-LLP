@@ -72,7 +72,7 @@ export const ConnectivityMatrix = ({ onOpenSiteVisit }) => {
               onClick={onOpenSiteVisit}
               className="bg-gradient-to-r from-[#D4AF37] to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-5 py-3 rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg transition cursor-pointer"
             >
-              <Navigation className="w-3.5 h-3.5" /> Book Free Route Inspection Cab
+              <Navigation className="w-3.5 h-3.5" /> Schedule Route Inspection Visit
             </button>
           </div>
 

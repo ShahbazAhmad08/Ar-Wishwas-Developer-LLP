@@ -7,8 +7,8 @@ export const AboutPage = ({ onOpenSiteVisit }) => {
   const guarantees = [
     {
       icon: FileCheck2,
-      title: "100% Khatauni & Dakhil Kharij Guarantee",
-      desc: "Our land parcels are verified through UP Revenue Department land records. Registry is done directly on registry stamp papers with immediate mutation (Dakhil Kharij) in the buyer's name."
+      title: "100% Revenue Mutation & Legal Title Guarantee",
+      desc: "Our land parcels are rigorously verified through UP Revenue Department official records. Registry is executed directly on state stamp papers with immediate revenue mutation into the buyer's name."
     },
     {
       icon: ShieldCheck,

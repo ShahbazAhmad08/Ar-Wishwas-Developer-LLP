@@ -108,7 +108,7 @@ export const HomePage = ({ onOpenSiteVisit }) => {
               </div>
               <div>
                 <div className="text-[10px] font-black text-emerald-400 uppercase tracking-wider">100% Legal Guarantee</div>
-                <div className="text-xs font-bold text-white">Registry & Dakhil-Kharij</div>
+                <div className="text-xs font-bold text-white">Registry & Revenue Mutation</div>
               </div>
             </div>
             <div className="mt-2 text-[11px] text-slate-200">Section 143 Converted • Clear Title Mutation</div>
@@ -168,9 +168,9 @@ export const HomePage = ({ onOpenSiteVisit }) => {
                 transition={{ duration: 0.85, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                 className="text-4xl sm:text-6xl md:text-7xl font-display font-black text-white leading-[1.12]"
               >
-                Aapka Sapna, Humara Wishwas!<br />
+                Building Your Dream Legacy<br />
                 <span className="gold-metallic-text italic font-serif">
-                  VIP Gated Colony Plots
+                  Luxury Gated Society Plots
                 </span>
               </motion.h1>
             </div>
@@ -182,11 +182,11 @@ export const HomePage = ({ onOpenSiteVisit }) => {
               transition={{ duration: 0.7, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
               className="text-base sm:text-lg md:text-xl text-slate-200 max-w-3xl mx-auto font-sans leading-relaxed pt-1"
             >
-              Bamrauli Airport Corridor, Jhalwa IIIT, Manjhanpur & NH-19 Highway par 
-              <strong className="text-amber-300 font-bold"> 30-40ft Interlocking Sadak</strong>, 
-              Bijli, Paani, Boundary aur 
-              <strong className="text-amber-300 font-bold"> Instant Bank Finance (SBI, PNB) </strong> 
-              ke saath turant Registry aur Dakhil-Kharij plots.
+              Prime residential and commercial plots across Bamrauli Airport Corridor, Jhalwa IIIT Hub, Manjhanpur & NH-19 Highway with 
+              <strong className="text-amber-300 font-bold"> 30-40ft Wide Interlocking Roads</strong>, 
+              Electricity, Drainage, Gated Boundary, and 
+              <strong className="text-amber-300 font-bold"> Pre-Approved Bank Loans (SBI, PNB) </strong> 
+              with 100% Guaranteed Registry & Revenue Mutation.
             </motion.p>
 
             {/* Primary Action Buttons */}
@@ -637,13 +637,13 @@ export const HomePage = ({ onOpenSiteVisit }) => {
       <section className="py-16 bg-gradient-to-r from-[#0B1A38] via-[#10244D] to-[#0B1A38] text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-white leading-tight">
-            Apna Plot Choose Karne Ke Liye Aaj Hi <br className="hidden sm:inline" />
+            Schedule Your Private Site Inspection <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-200 italic font-serif">
-              Site Visit Book Karein
+              & Property Tour Today
             </span>
           </h2>
           <p className="text-slate-200 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-            Senior property consultant aapko complete colony inspection karwayenge aur official Registry & Dakhil Kharij papers verify karwayenge.
+            Our senior land consultants will accompany you on an exclusive on-site layout inspection and verify all official Section 143 mutation & clear title legal documentation.
           </p>
           <div className="flex flex-wrap justify-center gap-4 pt-2">
             <motion.button
@@ -658,13 +658,13 @@ export const HomePage = ({ onOpenSiteVisit }) => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.96 }}
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Namaste Ar Wishwas Developer, mujhe plot visit schedule karni hai.")}`}
+              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Hello Ar Wishwas Developer LLP, I would like to schedule a private site visit and plot inspection.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl text-sm shadow-md transition flex items-center gap-2"
             >
               <ArrowRight className="w-4 h-4" />
-              <span>WhatsApp Us</span>
+              <span>WhatsApp Consultation</span>
             </motion.a>
           </div>
         </div>

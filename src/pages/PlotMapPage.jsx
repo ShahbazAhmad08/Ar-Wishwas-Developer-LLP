@@ -356,7 +356,7 @@ export const PlotMapPage = ({ onOpenSiteVisit }) => {
                     <>
                       <a
                         href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(
-                          `Namaste Ar Wishwas Developer! Mujhe ${currentSite.name} ka Plot No: ${selectedPlot.plotNo} (${selectedPlot.sizeSqYd} sq.yd, ${selectedPlot.facing}, Rate: ₹${selectedPlot.totalPrice.toLocaleString('en-IN')}) reserve karna hai. Kripya process aur token details batayein.`
+                          `Hello Ar Wishwas Developer LLP! I would like to reserve Plot No: ${selectedPlot.plotNo} at ${currentSite.name} (${selectedPlot.sizeSqYd} sq.yd, ${selectedPlot.facing}, Total Valuation: ₹${selectedPlot.totalPrice.toLocaleString('en-IN')}). Please share the token booking process and documents.`
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -377,9 +377,9 @@ export const PlotMapPage = ({ onOpenSiteVisit }) => {
                   ) : selectedPlot.status === 'booked' ? (
                     <div className="bg-amber-50 p-3.5 rounded-2xl border border-amber-200 text-center text-xs text-amber-800">
                       <p className="font-bold">This plot is reserved under token hold.</p>
-                      <p className="text-[11px] text-slate-600 mt-1">Enquire if waiting list is open for this parcel.</p>
+                      <p className="text-[11px] text-slate-600 mt-1">Enquire if the waiting list is open for this parcel.</p>
                       <a
-                        href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Namaste, kya Plot ${selectedPlot.plotNo} available ho sakta hai?`)}`}
+                        href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent(`Hello Ar Wishwas Developer LLP, could you please check if Plot ${selectedPlot.plotNo} in ${currentSite.name} is available on the waiting list?`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-2 inline-block text-amber-800 font-bold underline"

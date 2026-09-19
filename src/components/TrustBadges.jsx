@@ -5,8 +5,8 @@ export const TrustBadges = () => {
   const guarantees = [
     {
       icon: FileCheck2,
-      title: "100% Khatauni & Dakhil Kharij",
-      desc: "Completely clear and undisputed land title. Registry is executed directly in the client's name with immediate government Dakhil Kharij mutation guarantee.",
+      title: "100% Legal Title & Revenue Mutation",
+      desc: "Completely clear and undisputed land title. Registry is executed directly in the client's name with immediate government revenue mutation guarantee.",
       badge: "Govt. Record Verified"
     },
     {
@@ -99,7 +99,7 @@ export const TrustBadges = () => {
           </div>
 
           <a
-            href="https://wa.me/919876543210?text=Mujhe%20Registry%20aur%20143%20Legal%20Papers%20dekhne%20hain"
+            href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20review%20sample%20registry%20and%20Section%20143%20legal%20clearance%20papers."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-slate-900 hover:bg-slate-800 text-[#FCE8B2] border border-[#D4AF37]/40 hover:border-[#D4AF37] text-xs font-bold px-5 py-3 rounded-xl transition flex-shrink-0 cursor-pointer"
