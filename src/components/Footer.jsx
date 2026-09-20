@@ -1,49 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { BrandLogo } from './BrandLogo';
 import { COMPANY_INFO } from '../data/sitesData';
-import { Phone, Mail, MapPin, Copy, Check, Sparkles, Shield, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Phone, Mail, MapPin, Shield } from 'lucide-react';
 
 export const Footer = ({ onOpenSiteVisit }) => {
-  const [copiedPrompt, setCopiedPrompt] = useState(false);
-
-  const aiLogoPrompt = `Minimalist, modern luxury real estate logo for 'Ar Wishwas Developer LLP'. Geometric design combining a trust icon (shield or handshake element) with sleek plot layout lines and a modern house structure. Color palette: Deep Royal Blue, Warm Gold, and Clean White. Vector graphics, white background, high resolution, corporate and premium look.`;
-
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(aiLogoPrompt);
-    setCopiedPrompt(true);
-    setTimeout(() => setCopiedPrompt(false), 2500);
-  };
-
   return (
     <footer className="bg-slate-900 text-slate-300 pt-16 pb-24 sm:pb-16 text-xs font-sans border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        
-        {/* Top AI Logo Prompt Showcase Box */}
-        <div className="mb-14 bg-slate-800/80 rounded-3xl p-6 sm:p-8 border border-amber-500/30 shadow-xl">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
-            <div className="space-y-1.5 max-w-3xl">
-              <div className="flex items-center gap-2 text-amber-400 font-bold uppercase text-xs tracking-wider">
-                <Sparkles className="w-4 h-4" />
-                <span className="font-display">AI Brand Logo Prompt (Midjourney / DALL-E / Canva)</span>
-              </div>
-              <p className="text-xs text-slate-300 font-mono bg-slate-950 p-3.5 rounded-2xl border border-slate-700 select-all leading-relaxed">
-                "{aiLogoPrompt}"
-              </p>
-            </div>
-            
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              onClick={copyToClipboard}
-              className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-5 py-3 rounded-xl text-xs flex items-center gap-2 transition flex-shrink-0 cursor-pointer shadow-md"
-            >
-              {copiedPrompt ? <Check className="w-4 h-4 text-emerald-950" /> : <Copy className="w-4 h-4" />}
-              <span>{copiedPrompt ? 'Prompt Copied!' : 'Copy AI Prompt'}</span>
-            </motion.button>
-          </div>
-        </div>
 
         {/* 4-Columns Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
