@@ -113,6 +113,7 @@ export const Hero = ({ onOpenSiteVisit, onSelectSiteForMap }) => {
 
             </div>
           </div>
+        </div>
 
         {/* Live Status Indicators Ticker */}
         <div className="mt-8 flex flex-wrap justify-center items-center gap-6 text-xs text-slate-400">
