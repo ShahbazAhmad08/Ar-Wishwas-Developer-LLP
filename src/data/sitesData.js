@@ -42,7 +42,7 @@ export const CORE_AMENITIES = [
     icon: "ShieldCheck",
     title: "VIP Entrance Gate",
     desc: "Grand security arch with boom barrier, guard cabin & 24/7 CCTV surveillance.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    image: "/facilities/gate.jfif",
     badge: "24/7 Security"
   },
   {
@@ -50,7 +50,7 @@ export const CORE_AMENITIES = [
     icon: "Road",
     title: "30ft & 40ft Interlocking Roads",
     desc: "Heavy-duty concrete paver blocks with clean curb sides and easy vehicle turnaround.",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+    image: "/facilities/road1.jfif",
     badge: "Heavy Duty"
   },
   {
@@ -58,7 +58,7 @@ export const CORE_AMENITIES = [
     icon: "Lightbulb",
     title: "Street Lights & Electricity",
     desc: "Dedicated transformers, underground cabling, and energy-efficient LED street lighting.",
-    image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80",
+    image: "/facilities/lights.jfif",
     badge: "24/7 Power"
   },
   {
@@ -66,7 +66,7 @@ export const CORE_AMENITIES = [
     icon: "Droplet",
     title: "24/7 Water & Nali System",
     desc: "Covered pucca drainage (nali) system and centralized deep submersible borewell line.",
-    image: "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=800&q=80",
+    image: "/facilities/road1.jfif",
     badge: "Zero Waterlog"
   },
   {
@@ -74,7 +74,7 @@ export const CORE_AMENITIES = [
     icon: "Wall",
     title: "Gated Boundary Colony",
     desc: "Full 7-foot external security boundary wall around the complete layout for 100% safety.",
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+    image: "/facilities/image3.jfif",
     badge: "Fully Enclosed"
   },
   {
@@ -90,7 +90,7 @@ export const CORE_AMENITIES = [
     icon: "Trees",
     title: "Lush Green Parks & Open Space",
     desc: "Landscaped green area, jogging track, kids play zone, and sacred temple space.",
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
+    image: "/facilities/image3.jfif",
     badge: "Eco-Living"
   },
   {
@@ -150,12 +150,12 @@ export const SITES_DATA = [
     sqFtPriceDisplay: "₹ 944 / sq.ft",
     tagline: "Ultra-Modern Airport Corridor Living",
     badge: "Fast Selling • Airport View",
-    bannerImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+    bannerImage: "/project1.png",
     gallery: [
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+      "/project1.png",
+      "/facilities/road1.jfif",
+      "/facilities/gate.jfif",
+      "/facilities/lights.jfif"
     ],
     highlights: [
       "Just 3 km from Bamrauli Airport (Prayagraj Civil Enclave)",
@@ -190,11 +190,12 @@ export const SITES_DATA = [
     sqFtPriceDisplay: "₹ 1,244 / sq.ft",
     tagline: "VIP Gated Society for High Class Living",
     badge: "Premium Luxury • IIIT Hub",
-    bannerImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+    bannerImage: "/project2.png",
     gallery: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
+      "/project2.png",
+      "/facilities/gate.jfif",
+      "/facilities/image3.jfif",
+      "/facilities/road1.jfif"
     ],
     highlights: [
       "Walking distance from IIIT Allahabad & United Medicity",
@@ -228,11 +229,12 @@ export const SITES_DATA = [
     sqFtPriceDisplay: "₹ 667 / sq.ft",
     tagline: "Eco-Friendly Gated Township with Commercial Front",
     badge: "High ROI • 25 Acre Township",
-    bannerImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+    bannerImage: "/project4.png",
     gallery: [
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+      "/project4.png",
+      "/facilities/road1.jfif",
+      "/facilities/lights.jfif",
+      "/facilities/image3.jfif"
     ],
     highlights: [
       "Direct Main Highway Facing with High-Value Commercial Front Plots",
@@ -266,10 +268,12 @@ export const SITES_DATA = [
     sqFtPriceDisplay: "₹ 611 / sq.ft",
     tagline: "Pocket-Friendly Investment Near Rapid Transit",
     badge: "Budget Friendly • Near Station",
-    bannerImage: "https://images.unsplash.com/photo-1524813686514-a57563d77965?auto=format&fit=crop&w=1200&q=80",
+    bannerImage: "/project5.jpeg",
     gallery: [
-      "https://images.unsplash.com/photo-1524813686514-a57563d77965?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80"
+      "/project5.jpeg",
+      "/facilities/gate.jfif",
+      "/facilities/road1.jfif",
+      "/facilities/lights.jfif"
     ],
     highlights: [
       "Just 2.5 km from Bharwari Railway Station (Direct trains to Kanpur/Delhi)",
@@ -303,10 +307,11 @@ export const SITES_DATA = [
     sqFtPriceDisplay: "₹ 800 / sq.ft",
     tagline: "National Highway Touch Commercial & Residential Plots",
     badge: "Highway Touch • Fast Appreciation",
-    bannerImage: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
+    bannerImage: "/project1.png",
     gallery: [
-      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80"
+      "/project1.png",
+      "/project4.png",
+      "/facilities/image3.jfif"
     ],
     highlights: [
       "Zero-distance direct approach from Kanpur-Prayagraj 6-lane NH-19",

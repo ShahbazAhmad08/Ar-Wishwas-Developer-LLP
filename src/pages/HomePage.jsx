@@ -6,11 +6,14 @@ import { TiltCard } from '../components/TiltCard';
 import { ShieldCheck, MapPin, Sparkles, CheckCircle2, ArrowRight, Calendar, Landmark, Award, Compass, Search, Star, Quote, Trees, Road, ChevronRight, ChevronLeft, Calculator, MessageSquare, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Hero background carousel images (compact & elegant)
+// Hero background carousel images (using real project & site infrastructure photos)
 const HERO_SLIDES = [
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
-  "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80",
-  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80"
+  "/project1.png",
+  "/project2.png",
+  "/project4.png",
+  "/project5.jpeg",
+  "/facilities/gate.jfif",
+  "/facilities/road1.jfif"
 ];
 
 const HIGHLIGHT_LOCATIONS = [

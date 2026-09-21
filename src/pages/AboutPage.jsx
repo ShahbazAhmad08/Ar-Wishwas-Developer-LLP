@@ -74,7 +74,7 @@ export const AboutPage = ({ onOpenSiteVisit }) => {
       title: "100% Revenue Mutation & Legal Title Guarantee",
       desc: "Our land parcels are rigorously verified through UP Revenue Department official records. Registry is executed directly on state stamp papers with immediate revenue mutation into the buyer's name.",
       badge: "Online Verifiable",
-      image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80",
+      image: "/facilities/legal.jfif",
       tag: "Stamp Paper Deed"
     },
     {
@@ -95,8 +95,8 @@ export const AboutPage = ({ onOpenSiteVisit }) => {
       title: "Day-One Possession & Pillar Demarcation",
       desc: "Concrete demarcation pillars with plot number tagging are installed on spot upon token booking. Full access via 30ft and 40ft wide interlocking roads.",
       badge: "Physical Possession",
-      image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80",
-      tag: "Boundary Pillars"
+      image: "/facilities/road1.jfif",
+      tag: "Boundary Pillars & 40ft Road"
     }
   ];
 

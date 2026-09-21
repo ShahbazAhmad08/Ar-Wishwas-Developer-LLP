@@ -35,7 +35,6 @@ export const Footer = ({ onOpenSiteVisit }) => {
               <li><Link to="/" className="hover:text-amber-400 transition">Home Page</Link></li>
               <li><Link to="/projects" className="hover:text-amber-400 transition">Featured Projects</Link></li>
               <li><Link to="/plot-map" className="hover:text-amber-400 transition font-bold text-amber-300">Interactive Masterplan Map</Link></li>
-              <li><Link to="/calculators" className="hover:text-amber-400 transition">EMI & ROI Calculators</Link></li>
               <li><Link to="/about" className="hover:text-amber-400 transition">Legal Transparency & Documents</Link></li>
               <li><Link to="/contact" className="hover:text-amber-400 transition">Contact & Offices</Link></li>
             </ul>

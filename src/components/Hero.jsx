@@ -22,7 +22,7 @@ export const Hero = ({ onOpenSiteVisit, onSelectSiteForMap }) => {
       {/* Background Cinematic Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+          src="/project1.png"
           alt="Luxury Gated Enclave"
           className="w-full h-full object-cover object-center opacity-70 scale-105 transition-transform duration-1000"
         />

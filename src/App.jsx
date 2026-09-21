@@ -13,7 +13,6 @@ import { AmbientGlowFollower } from './components/AmbientGlowFollower';
 import { HomePage } from './pages/HomePage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { PlotMapPage } from './pages/PlotMapPage';
-import { CalculatorsPage } from './pages/CalculatorsPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 
@@ -60,14 +59,6 @@ const AnimatedRoutes = ({ onOpenSiteVisit, onOpenSiteDetail }) => {
           element={
             <PageTransition>
               <PlotMapPage onOpenSiteVisit={onOpenSiteVisit} />
-            </PageTransition>
-          } 
-        />
-        <Route 
-          path="/calculators" 
-          element={
-            <PageTransition>
-              <CalculatorsPage onOpenSiteVisit={onOpenSiteVisit} />
             </PageTransition>
           } 
         />
