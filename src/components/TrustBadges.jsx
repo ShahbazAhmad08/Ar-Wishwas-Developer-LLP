@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldCheck, FileCheck2, Landmark, Check, Award, Lock, Sparkles } from 'lucide-react';
+import { COMPANY_INFO } from '../data/sitesData';
 
 export const TrustBadges = () => {
   const guarantees = [
@@ -99,7 +100,7 @@ export const TrustBadges = () => {
           </div>
 
           <a
-            href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20review%20sample%20registry%20and%20Section%20143%20legal%20clearance%20papers."
+            href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Hello Ar Wishwas Developer LLP, I would like to review sample registry and Section 143 legal clearance papers.")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-slate-900 hover:bg-slate-800 text-[#FCE8B2] border border-[#D4AF37]/40 hover:border-[#D4AF37] text-xs font-bold px-5 py-3 rounded-xl transition flex-shrink-0 cursor-pointer"

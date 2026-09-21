@@ -29,34 +29,119 @@ export const Navbar = ({ onOpenSiteVisit }) => {
 
   return (
     <>
-      {/* Top Announcement Bar */}
-      <div className="bg-gradient-to-r from-[#0B1A38] via-[#162D5A] to-[#0B1A38] text-white text-xs font-sans py-2 px-4">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-          <div className="flex items-center gap-2">
-            <span className="bg-amber-400 text-slate-950 text-[10px] px-2.5 py-0.5 rounded-full uppercase tracking-wider font-extrabold flex items-center gap-1 shadow-sm">
-              <Sparkles className="w-3 h-3 text-slate-950" /> Mahakumbh 2025 Corridor
-            </span>
-            <span className="text-slate-200 text-xs hidden sm:inline">
-              100% Khatauni Verified Gated Plots in Prayagraj & Kaushambi with Immediate Possession
-            </span>
-            <span className="sm:hidden text-slate-200 text-[11px]">
-              100% Verified Plots • 80% Bank Loan Approved
-            </span>
+      {/* Top Continuous Running Announcement Bar */}
+      <div className="bg-gradient-to-r from-[#060D1F] via-[#0F1E3D] to-[#060D1F] text-white text-xs font-sans py-2 border-b border-amber-500/20 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between gap-4">
+          
+          {/* Running Marquee Strip */}
+          <div className="overflow-hidden flex-1 relative [mask-image:linear-gradient(to_right,transparent,black_4%,black_96%,transparent)]">
+            <div className="animate-marquee flex items-center gap-8 text-[11px] font-medium tracking-wide">
+              {/* Set 1 */}
+              <span className="inline-flex items-center gap-2">
+                <span className="bg-amber-400 text-slate-950 text-[10px] px-2 py-0.5 rounded-full font-black uppercase tracking-wider flex items-center gap-1 shadow-sm">
+                  <Sparkles className="w-2.5 h-2.5" /> Mahakumbh 2025 Corridor
+                </span>
+                <span className="text-slate-200">100% Khatauni Verified Gated Plots in Prayagraj & Kaushambi</span>
+              </span>
+
+              <span className="text-amber-400 font-bold">•</span>
+
+              <span className="inline-flex items-center gap-2">
+                <span className="bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                  Bank Approved
+                </span>
+                <span className="text-slate-200">Up to 80% Plot Loan Support with SBI, PNB, HDFC & Baroda</span>
+              </span>
+
+              <span className="text-amber-400 font-bold">•</span>
+
+              <span className="inline-flex items-center gap-2">
+                <span className="bg-amber-500/20 border border-amber-400/40 text-amber-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                  Legal Title
+                </span>
+                <span className="text-slate-200">Section 143 Non-Agri Cleared • Immediate Registry & Revenue Mutation</span>
+              </span>
+
+              <span className="text-amber-400 font-bold">•</span>
+
+              <span className="inline-flex items-center gap-2">
+                <span className="bg-blue-500/20 border border-blue-400/40 text-blue-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                  Infrastructure
+                </span>
+                <span className="text-slate-200">30ft & 40ft Wide Interlocking Roads, Electric Poles, Water & 7ft Boundary</span>
+              </span>
+
+              <span className="text-amber-400 font-bold">•</span>
+
+              <span className="inline-flex items-center gap-2">
+                <span className="bg-rose-500/20 border border-rose-400/40 text-rose-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                  Direct Deal
+                </span>
+                <span className="text-slate-200">0% Brokerage – Direct Developer Handover with Day-One Possession</span>
+              </span>
+
+              <span className="text-amber-400 font-bold">•</span>
+
+              {/* Set 2 Duplicate for Seamless Infinite Loop */}
+              <span className="inline-flex items-center gap-2">
+                <span className="bg-amber-400 text-slate-950 text-[10px] px-2 py-0.5 rounded-full font-black uppercase tracking-wider flex items-center gap-1 shadow-sm">
+                  <Sparkles className="w-2.5 h-2.5" /> Mahakumbh 2025 Corridor
+                </span>
+                <span className="text-slate-200">100% Khatauni Verified Gated Plots in Prayagraj & Kaushambi</span>
+              </span>
+
+              <span className="text-amber-400 font-bold">•</span>
+
+              <span className="inline-flex items-center gap-2">
+                <span className="bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                  Bank Approved
+                </span>
+                <span className="text-slate-200">Up to 80% Plot Loan Support with SBI, PNB, HDFC & Baroda</span>
+              </span>
+
+              <span className="text-amber-400 font-bold">•</span>
+
+              <span className="inline-flex items-center gap-2">
+                <span className="bg-amber-500/20 border border-amber-400/40 text-amber-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                  Legal Title
+                </span>
+                <span className="text-slate-200">Section 143 Non-Agri Cleared • Immediate Registry & Revenue Mutation</span>
+              </span>
+
+              <span className="text-amber-400 font-bold">•</span>
+
+              <span className="inline-flex items-center gap-2">
+                <span className="bg-blue-500/20 border border-blue-400/40 text-blue-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                  Infrastructure
+                </span>
+                <span className="text-slate-200">30ft & 40ft Wide Interlocking Roads, Electric Poles, Water & 7ft Boundary</span>
+              </span>
+
+              <span className="text-amber-400 font-bold">•</span>
+
+              <span className="inline-flex items-center gap-2">
+                <span className="bg-rose-500/20 border border-rose-400/40 text-rose-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                  Direct Deal
+                </span>
+                <span className="text-slate-200">0% Brokerage – Direct Developer Handover with Day-One Possession</span>
+              </span>
+            </div>
           </div>
 
-          <div className="flex items-center gap-4 text-xs font-medium">
+          {/* Contact Actions Right Fixed */}
+          <div className="flex-shrink-0 hidden md:flex items-center gap-4 text-xs font-medium pl-4 border-l border-slate-700/60 z-10 bg-[#0F1E3D]/80 backdrop-blur-sm py-0.5 rounded-lg">
             <a 
               href={`tel:${COMPANY_INFO.phoneRaw}`} 
-              className="flex items-center gap-1.5 text-slate-200 hover:text-amber-400 transition"
+              className="flex items-center gap-1.5 text-slate-200 hover:text-amber-300 font-bold transition font-mono"
             >
               <Phone className="w-3.5 h-3.5 text-amber-400" /> {COMPANY_INFO.phone}
             </a>
             <span className="text-slate-600">|</span>
             <button 
               onClick={onOpenSiteVisit}
-              className="text-amber-300 hover:text-white font-bold cursor-pointer transition flex items-center gap-1"
+              className="text-amber-300 hover:text-white font-bold cursor-pointer transition flex items-center gap-1 text-[11px]"
             >
-              <Calendar className="w-3.5 h-3.5" /> Schedule Visit
+              <Calendar className="w-3 h-3 text-amber-400" /> Schedule Visit
             </button>
           </div>
         </div>

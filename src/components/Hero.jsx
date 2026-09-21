@@ -17,59 +17,53 @@ export const Hero = ({ onOpenSiteVisit, onSelectSiteForMap }) => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-between overflow-hidden bg-[#030712] pt-8 pb-16 border-b border-[#D4AF37]/20">
+    <section className="relative min-h-[75vh] sm:min-h-[80vh] flex flex-col justify-center overflow-hidden bg-[#030712] pt-8 pb-14 border-b border-[#D4AF37]/20">
       
       {/* Background Cinematic Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85"
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
           alt="Luxury Gated Enclave"
           className="w-full h-full object-cover object-center opacity-25 scale-105 transition-transform duration-1000"
         />
         {/* Multi-layered dark vignette scrim */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-[#050D20]/90 to-[#030712]/80" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(212,175,55,0.12),transparent_70%)]" />
-        
-        {/* Subtle architectural grid lines */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#d4af3708_1px,transparent_1px),linear-gradient(to_bottom,#d4af3708_1px,transparent_1px)] bg-[size:5rem_5rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_20%,#000_70%,transparent_100%)]" />
       </div>
 
       {/* Main Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14 w-full">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 w-full text-center">
         
         {/* Top Trust Ribbon */}
-        <div className="flex justify-center mb-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0E1C38]/90 border border-[#D4AF37]/40 text-[#FCE8B2] text-xs font-semibold tracking-wide shadow-[0_0_20px_rgba(212,175,55,0.15)]">
+        <div className="flex justify-center mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0E1C38]/90 border border-[#D4AF37]/40 text-[#FCE8B2] text-xs font-semibold tracking-wide shadow-[0_0_20px_rgba(212,175,55,0.15)]">
             <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-ping" />
             <span className="font-display font-bold uppercase tracking-widest text-[#D4AF37]">Prayagraj & Kaushambi</span>
             <span className="text-slate-600">•</span>
-            <span className="text-slate-300">100% Verified Gated Society Plots</span>
+            <span className="text-slate-300">100% Verified Gated Plots</span>
           </div>
         </div>
 
         {/* Main Display Headlines */}
-        <div className="text-center max-w-4xl mx-auto space-y-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-extrabold tracking-tight text-white leading-[1.15]">
-            Your Vision, Our Integrity<br />
+        <div className="space-y-3">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-display font-extrabold tracking-tight text-white leading-tight">
+            Building Your Dream Legacy<br />
             <span className="gold-metallic-text italic font-serif">
-              VIP Gated Community Plots
+              Luxury Gated Society Plots
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-sans font-normal leading-relaxed pt-2">
-            Prime locations across Bamrauli Airport Corridor, Jhalwa IIIT, Manjhanpur & NH-19 Highway with 
-            <strong className="text-[#FCE8B2] font-semibold"> 30-40ft Interlocking Roads</strong>, 
-            Electricity, Water lines, Boundary Walls, and 
-            <strong className="text-[#FCE8B2] font-semibold"> Pre-Approved Bank Finance (SBI / PNB) </strong> 
-            with immediate Registry and 100% Revenue Mutation guarantee.
+          <p className="text-xs sm:text-sm md:text-base text-slate-300 max-w-2xl mx-auto font-sans font-normal leading-relaxed">
+            Prime plots in Prayagraj & Kaushambi with <strong className="text-[#FCE8B2] font-semibold">30-40ft Interlocking Roads</strong>, 
+            Bank Loan Approval (SBI/PNB), and <strong className="text-[#FCE8B2] font-semibold">100% Guaranteed Registry & Mutation</strong>.
           </p>
         </div>
 
         {/* Action CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
+        <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
           <button
             onClick={onOpenSiteVisit}
-            className="w-full sm:w-auto bg-gradient-to-r from-[#D4AF37] via-[#F59E0B] to-[#C59A08] hover:from-[#FCE8B2] hover:to-[#D4AF37] text-slate-950 font-sans font-black px-8 py-4 rounded-2xl shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 text-sm tracking-wide cursor-pointer group"
+            className="bg-gradient-to-r from-[#D4AF37] via-[#F59E0B] to-[#C59A08] hover:from-[#FCE8B2] hover:to-[#D4AF37] text-slate-950 font-sans font-black px-6 py-3.5 rounded-xl shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 text-xs sm:text-sm tracking-wide cursor-pointer group"
           >
             <Calendar className="w-4 h-4 text-slate-950" />
             <span>Schedule Site Visit</span>
@@ -78,7 +72,7 @@ export const Hero = ({ onOpenSiteVisit, onSelectSiteForMap }) => {
 
           <a
             href="#live-map"
-            className="w-full sm:w-auto luxury-glass hover:bg-[#10244D]/80 text-white font-semibold px-8 py-4 rounded-2xl border border-[#D4AF37]/30 hover:border-[#D4AF37]/60 transition-all flex items-center justify-center gap-2.5 text-sm shadow-xl cursor-pointer"
+            className="luxury-glass hover:bg-[#10244D]/80 text-white font-semibold px-6 py-3.5 rounded-xl border border-[#D4AF37]/30 hover:border-[#D4AF37]/60 transition-all flex items-center justify-center gap-2 text-xs sm:text-sm shadow-md cursor-pointer"
           >
             <Compass className="w-4 h-4 text-[#D4AF37]" />
             <span>Interactive Live Plot Map</span>

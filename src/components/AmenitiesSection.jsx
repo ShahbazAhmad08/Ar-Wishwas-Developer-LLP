@@ -1,6 +1,6 @@
 import React from 'react';
 import { CORE_AMENITIES } from '../data/sitesData';
-import { ShieldCheck, Road, Lightbulb, Droplets, Landmark, Trees, FileCheck, Building2, Sparkles, CheckCircle } from 'lucide-react';
+import { ShieldCheck, Road, Lightbulb, Droplets, Landmark, Trees, FileCheck, Building2, Sparkles, CheckCircle2 } from 'lucide-react';
 
 export const AmenitiesSection = () => {
   return (
@@ -24,139 +24,49 @@ export const AmenitiesSection = () => {
           </p>
         </div>
 
-        {/* Bento Grid Layout (8 items, asymmetric style) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          
-          {/* Card 1: VIP Grand Gate (Span 2 on lg) */}
-          <div className="lg:col-span-2 luxury-card rounded-3xl p-7 border border-[#D4AF37]/30 flex flex-col justify-between relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-48 h-48 bg-[#D4AF37]/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500" />
-            <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#D4AF37]/15 text-[#D4AF37] border border-[#D4AF37]/40 flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300">
-                <ShieldCheck className="w-6 h-6" />
-              </div>
-              <span className="text-[10px] font-mono uppercase font-bold text-[#D4AF37] tracking-wider block mb-1">
-                Security & Access
-              </span>
-              <h3 className="text-xl font-display font-bold text-white mb-2">
-                Grand Security Arch & Boom Barrier Gate
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md">
-                24x7 armed guard security, boom barrier access control, and HD night-vision CCTV surveillance for complete family peace of mind.
-              </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-semibold text-emerald-400">
-              <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4" /> 100% Operational</span>
-              <span className="text-slate-400 font-mono text-[10px]">Guard Cabin On-Site</span>
-            </div>
-          </div>
+        {/* 3 Cards per row grid with images */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {CORE_AMENITIES.map((amenity, idx) => (
+            <div
+              key={amenity.id || idx}
+              className="luxury-card rounded-3xl overflow-hidden border border-[#D4AF37]/30 flex flex-col justify-between group hover:border-[#D4AF37]/70 transition duration-300"
+            >
+              <div>
+                {/* Image Container */}
+                <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-900">
+                  <img
+                    src={amenity.image}
+                    alt={amenity.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-black/30" />
+                  
+                  <span className="absolute top-3 right-3 bg-amber-500 text-slate-950 font-black text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full shadow-md">
+                    {amenity.badge || "Verified"}
+                  </span>
 
-          {/* Card 2: 30ft & 40ft Roads */}
-          <div className="luxury-card rounded-3xl p-6 border border-[#D4AF37]/30 flex flex-col justify-between group">
-            <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#D4AF37]/15 text-[#D4AF37] border border-[#D4AF37]/40 flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300">
-                <Road className="w-6 h-6" />
-              </div>
-              <span className="text-[10px] font-mono uppercase font-bold text-[#D4AF37] tracking-wider block mb-1">
-                Connectivity
-              </span>
-              <h3 className="text-lg font-display font-bold text-white mb-2">
-                Heavy-Duty Interlocking Paver Roads
-              </h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                40ft wide main dividing boulevard and 30ft internal cross lanes for effortless two-way four-wheeler movement.
-              </p>
-            </div>
-            <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-emerald-400 font-semibold flex items-center gap-1">
-              <CheckCircle className="w-3.5 h-3.5" /> High Load Capacity
-            </div>
-          </div>
+                  <span className="absolute bottom-3 left-3 bg-emerald-500/90 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-md flex items-center gap-1">
+                    <CheckCircle2 className="w-3 h-3" /> 100% Implemented
+                  </span>
+                </div>
 
-          {/* Card 3: Street Lighting */}
-          <div className="luxury-card rounded-3xl p-6 border border-[#D4AF37]/30 flex flex-col justify-between group">
-            <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#D4AF37]/15 text-[#D4AF37] border border-[#D4AF37]/40 flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300">
-                <Lightbulb className="w-6 h-6" />
+                <div className="p-6 space-y-2">
+                  <h3 className="text-lg font-display font-bold text-white group-hover:text-[#FCE8B2] transition">
+                    {amenity.title}
+                  </h3>
+                  <p className="text-xs text-slate-300 leading-relaxed font-sans">
+                    {amenity.desc}
+                  </p>
+                </div>
               </div>
-              <span className="text-[10px] font-mono uppercase font-bold text-[#D4AF37] tracking-wider block mb-1">
-                Electricity
-              </span>
-              <h3 className="text-lg font-display font-bold text-white mb-2">
-                Transformers & LED Street Lights
-              </h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Dedicated society transformers, high-illumination solar & electric LED poles, and underground cable conduit setup.
-              </p>
-            </div>
-            <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-emerald-400 font-semibold flex items-center gap-1">
-              <CheckCircle className="w-3.5 h-3.5" /> 24/7 Power Backup
-            </div>
-          </div>
 
-          {/* Card 4: Water & Drainage */}
-          <div className="luxury-card rounded-3xl p-6 border border-[#D4AF37]/30 flex flex-col justify-between group">
-            <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#D4AF37]/15 text-[#D4AF37] border border-[#D4AF37]/40 flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300">
-                <Droplets className="w-6 h-6" />
+              <div className="px-6 pb-5 pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-semibold text-emerald-400">
+                <span className="text-[#D4AF37] font-mono text-[11px]">Quality Tested</span>
+                <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4" /> Ready On-Site</span>
               </div>
-              <span className="text-[10px] font-mono uppercase font-bold text-[#D4AF37] tracking-wider block mb-1">
-                Utilities
-              </span>
-              <h3 className="text-lg font-display font-bold text-white mb-2">
-                Submersible Borewell & Covered Nali
-              </h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Central sweet drinking water line along with pucca underground stormwater & sewage drainage system.
-              </p>
             </div>
-            <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-emerald-400 font-semibold flex items-center gap-1">
-              <CheckCircle className="w-3.5 h-3.5" /> Zero Waterlogging
-            </div>
-          </div>
-
-          {/* Card 5: Gated Boundary Wall */}
-          <div className="luxury-card rounded-3xl p-6 border border-[#D4AF37]/30 flex flex-col justify-between group">
-            <div>
-              <div className="w-12 h-12 rounded-2xl bg-[#D4AF37]/15 text-[#D4AF37] border border-[#D4AF37]/40 flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300">
-                <Building2 className="w-6 h-6" />
-              </div>
-              <span className="text-[10px] font-mono uppercase font-bold text-[#D4AF37] tracking-wider block mb-1">
-                Enclosure
-              </span>
-              <h3 className="text-lg font-display font-bold text-white mb-2">
-                7ft Outer Boundary Wall
-              </h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Complete perimeter boundary wall with barbed wire crest ensuring no external encroachment ever.
-              </p>
-            </div>
-            <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-emerald-400 font-semibold flex items-center gap-1">
-              <CheckCircle className="w-3.5 h-3.5" /> 100% Boundary Enclosed
-            </div>
-          </div>
-
-          {/* Card 6: Landscaped Green Park (Span 2 on lg) */}
-          <div className="lg:col-span-2 luxury-card rounded-3xl p-7 border border-[#D4AF37]/30 flex flex-col justify-between relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500" />
-            <div>
-              <div className="w-12 h-12 rounded-2xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/40 flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300">
-                <Trees className="w-6 h-6" />
-              </div>
-              <span className="text-[10px] font-mono uppercase font-bold text-emerald-400 tracking-wider block mb-1">
-                Eco Living & Lifestyle
-              </span>
-              <h3 className="text-xl font-display font-bold text-white mb-2">
-                Landscaped Green Park & Sacred Temple Zone
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md">
-                1.5 acres of designated green belt with walking tracks, flowering trees, children's play swings, and community sitting gazebo.
-              </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-semibold text-emerald-400">
-              <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4" /> Healthy Air Quality</span>
-              <span className="text-slate-400 font-mono text-[10px]">Open Green Space</span>
-            </div>
-          </div>
-
+          ))}
         </div>
 
       </div>

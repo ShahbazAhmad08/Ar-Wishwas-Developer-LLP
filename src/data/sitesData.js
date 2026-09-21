@@ -6,10 +6,10 @@ export const COMPANY_INFO = {
   shortName: "Ar Wishwas",
   tagline: "Trust • Commitment • Growth",
   englishTagline: "Premier Gated Society Plots in Prayagraj & Kaushambi – 100% Verified Legal Land",
-  phone: "+91 98765 43210",
-  phoneRaw: "9876543210",
-  whatsapp: "919876543210",
-  email: "info@arwishwas.com",
+  phone: "+91 90059 38097",
+  phoneRaw: "9005938097",
+  whatsapp: "919005938097",
+  email: "info@arvishawas.in",
   officeAddress: "Corporate Office: 2nd Floor, Civil Lines, Near High Court, Prayagraj, UP - 211001",
   branchAddress: "Site HQ: Main Highway Road, Near Manjhanpur, Kaushambi, UP",
   stats: {
@@ -24,7 +24,7 @@ export const COMPANY_INFO = {
     facebook: "https://facebook.com",
     instagram: "https://instagram.com",
     youtube: "https://youtube.com",
-    whatsapp: "https://wa.me/919876543210"
+    whatsapp: "https://wa.me/919005938097"
   }
 };
 
@@ -41,49 +41,65 @@ export const CORE_AMENITIES = [
     id: "entrance",
     icon: "ShieldCheck",
     title: "VIP Entrance Gate",
-    desc: "Grand security arch with boom barrier, guard security cabin & CCTV monitoring."
+    desc: "Grand security arch with boom barrier, guard cabin & 24/7 CCTV surveillance.",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    badge: "24/7 Security"
   },
   {
     id: "roads",
     icon: "Road",
     title: "30ft & 40ft Interlocking Roads",
-    desc: "Heavy-duty concrete paver blocks with clean curb sides and easy vehicle turnaround."
+    desc: "Heavy-duty concrete paver blocks with clean curb sides and easy vehicle turnaround.",
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+    badge: "Heavy Duty"
   },
   {
     id: "lights",
     icon: "Lightbulb",
     title: "Street Lights & Electricity",
-    desc: "Dedicated transformers, underground cables, and energy-efficient LED street lighting."
+    desc: "Dedicated transformers, underground cabling, and energy-efficient LED street lighting.",
+    image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80",
+    badge: "24/7 Power"
   },
   {
     id: "water",
     icon: "Droplet",
     title: "24/7 Water & Nali System",
-    desc: "Covered pucca drainage (nali) system and centralized deep submersible borewell line."
+    desc: "Covered pucca drainage (nali) system and centralized deep submersible borewell line.",
+    image: "https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=800&q=80",
+    badge: "Zero Waterlog"
   },
   {
     id: "boundary",
     icon: "Wall",
     title: "Gated Boundary Colony",
-    desc: "Full 7-foot external security boundary wall around the complete layout for 100% safety."
+    desc: "Full 7-foot external security boundary wall around the complete layout for 100% safety.",
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+    badge: "Fully Enclosed"
   },
   {
     id: "finance",
     icon: "Landmark",
     title: "Instant Bank Finance",
-    desc: "Pre-approved plot loans with SBI, HDFC & PNB with up to 80% financing assistance."
+    desc: "Pre-approved plot loans with SBI, HDFC & PNB with up to 80% financing assistance.",
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
+    badge: "SBI & PNB Ready"
   },
   {
     id: "park",
     icon: "Trees",
     title: "Lush Green Parks & Open Space",
-    desc: "Landscaped green area, jogging track, kids play zone, and sacred temple space."
+    desc: "Landscaped green area, jogging track, kids play zone, and sacred temple space.",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
+    badge: "Eco-Living"
   },
   {
     id: "registry",
     icon: "FileCheck",
     title: "Immediate Registry & Revenue Mutation",
-    desc: "100% clear title, Section 143 non-agricultural certified, instant registry upon final payment."
+    desc: "100% clear title, Section 143 non-agricultural certified, instant registry upon final payment.",
+    image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80",
+    badge: "100% Legal"
   }
 ];
 
@@ -363,5 +379,21 @@ export const TESTIMONIALS = [
     review: "Investing in a commercial highway-touch parcel at Wishwas Residency turned out to be our highest-yielding asset. Land value surged over 30% within a year. Being an LLP entity, their title records and legal compliance are 100% pristine.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80"
+  },
+  {
+    name: "Adv. Vikas Maurya",
+    role: "High Court Advocate",
+    site: "Wishwas Eco Park, Kaushambi",
+    review: "As a legal practitioner, my first priority was clear Section 143 non-agricultural conversion and registry authenticity. Ar Wishwas provided all revenue documents upfront. Demarcation pillars and roads are fully built.",
+    rating: 5,
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+  },
+  {
+    name: "Ramesh Chandra Gupta",
+    role: "Government Treasury Officer (Retd.)",
+    site: "Wishwas Smart Township, Bharwari",
+    review: "We booked two plots for our children. The proximity to Bharwari Railway Junction and GT Road is fantastic. The loan process with State Bank of India was smooth and handled completely by their team.",
+    rating: 5,
+    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80"
   }
 ];

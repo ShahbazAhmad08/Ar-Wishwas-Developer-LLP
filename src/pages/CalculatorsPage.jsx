@@ -123,18 +123,29 @@ export const CalculatorsPage = ({ onOpenSiteVisit }) => {
               
               {/* Sliders (7 cols) */}
               <div className="lg:col-span-7 space-y-6">
-                <div>
+                
+                {/* Loan Amount */}
+                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
                   <div className="flex justify-between items-center mb-2">
                     <label className="text-xs font-bold uppercase tracking-wider text-slate-700">
-                      Total Plot Price:
+                      Loan Amount (₹):
                     </label>
-                    <span className="text-lg font-black font-display text-amber-900">
-                      ₹ {plotAmount.toLocaleString('en-IN')}
-                    </span>
+                    <div className="flex items-center gap-1 bg-white border border-slate-300 rounded-xl px-3 py-1 shadow-sm">
+                      <span className="text-xs text-slate-500 font-bold">₹</span>
+                      <input
+                        type="number"
+                        min="100000"
+                        max="5000000"
+                        step="25000"
+                        value={plotAmount}
+                        onChange={(e) => setPlotAmount(Math.max(0, Number(e.target.value)))}
+                        className="text-sm font-black font-mono text-amber-900 w-32 text-right focus:outline-none"
+                      />
+                    </div>
                   </div>
                   <input
                     type="range"
-                    min="400000"
+                    min="300000"
                     max="4000000"
                     step="25000"
                     value={plotAmount}
@@ -142,18 +153,19 @@ export const CalculatorsPage = ({ onOpenSiteVisit }) => {
                     className="w-full"
                   />
                   <div className="flex justify-between text-[11px] text-slate-400 mt-1 font-mono">
-                    <span>₹4 Lakh</span>
+                    <span>₹3 Lakh</span>
                     <span>₹20 Lakh</span>
                     <span>₹40 Lakh</span>
                   </div>
                 </div>
 
-                <div>
+                {/* Down Payment */}
+                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
                   <div className="flex justify-between items-center mb-2">
                     <label className="text-xs font-bold uppercase tracking-wider text-slate-700">
                       Down Payment ({downPaymentPercent}%):
                     </label>
-                    <span className="text-lg font-black font-display text-emerald-600">
+                    <span className="text-sm font-black font-display text-emerald-600 font-mono">
                       ₹ {downPaymentAmount.toLocaleString('en-IN')}
                     </span>
                   </div>
@@ -173,11 +185,20 @@ export const CalculatorsPage = ({ onOpenSiteVisit }) => {
                   </div>
                 </div>
 
+                {/* Tenure & Interest Rate Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
                     <div className="flex justify-between items-center mb-2">
-                      <label className="text-xs font-bold text-slate-600">Loan Tenure:</label>
-                      <span className="text-sm font-black text-amber-900 font-mono">{tenureYears} Years</span>
+                      <label className="text-xs font-bold text-slate-600">Loan Tenure (Years):</label>
+                      <input
+                        type="number"
+                        min="1"
+                        max="20"
+                        step="1"
+                        value={tenureYears}
+                        onChange={(e) => setTenureYears(Math.max(1, Number(e.target.value)))}
+                        className="text-xs font-black text-amber-900 font-mono bg-white border border-slate-300 rounded-lg px-2 py-1 w-16 text-right focus:outline-none"
+                      />
                     </div>
                     <input
                       type="range"
@@ -186,23 +207,31 @@ export const CalculatorsPage = ({ onOpenSiteVisit }) => {
                       step="1"
                       value={tenureYears}
                       onChange={(e) => setTenureYears(Number(e.target.value))}
-                      className="w-full"
+                      className="w-full mt-1"
                     />
                   </div>
 
                   <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
                     <div className="flex justify-between items-center mb-2">
-                      <label className="text-xs font-bold text-slate-600">Interest Rate:</label>
-                      <span className="text-sm font-black text-amber-900 font-mono">{interestRate}%</span>
+                      <label className="text-xs font-bold text-slate-600">Interest Rate (% p.a):</label>
+                      <input
+                        type="number"
+                        min="5"
+                        max="18"
+                        step="0.1"
+                        value={interestRate}
+                        onChange={(e) => setInterestRate(Math.max(1, Number(e.target.value)))}
+                        className="text-xs font-black text-amber-900 font-mono bg-white border border-slate-300 rounded-lg px-2 py-1 w-16 text-right focus:outline-none"
+                      />
                     </div>
                     <input
                       type="range"
-                      min="7.5"
-                      max="12.0"
+                      min="7.0"
+                      max="13.0"
                       step="0.1"
                       value={interestRate}
                       onChange={(e) => setInterestRate(Number(e.target.value))}
-                      className="w-full"
+                      className="w-full mt-1"
                     />
                   </div>
                 </div>

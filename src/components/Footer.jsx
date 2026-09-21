@@ -44,7 +44,7 @@ export const Footer = ({ onOpenSiteVisit }) => {
           {/* Featured Colonies */}
           <div>
             <h4 className="text-xs font-mono font-bold text-white uppercase tracking-wider mb-4 border-b border-slate-800 pb-2.5">
-              Gated Colonies
+             Gated Colonies
             </h4>
             <ul className="space-y-2.5 text-xs text-slate-300">
               <li><Link to="/projects" className="hover:text-amber-400 transition">Wishwas Green City (Airport)</Link></li>
