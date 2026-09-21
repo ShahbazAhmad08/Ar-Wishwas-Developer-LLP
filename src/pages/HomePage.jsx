@@ -106,16 +106,17 @@ export const HomePage = ({ onOpenSiteVisit }) => {
               key={currentSlide}
               src={HERO_SLIDES[currentSlide]}
               alt="Luxury Township"
-              initial={{ scale: 1.08, opacity: 0 }}
-              animate={{ scale: 1, opacity: 0.35 }}
+              initial={{ scale: 1.05, opacity: 0 }}
+              animate={{ scale: 1, opacity: 0.72 }}
               exit={{ opacity: 0, scale: 0.98 }}
-              transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
               className="w-full h-full object-cover object-center"
             />
           </AnimatePresence>
           
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1A38] via-[#0B1A38]/75 to-[#050C1F]/90" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(217,119,6,0.14),transparent_70%)]" />
+          {/* Lighter scrim overlay so luxury background property is clearly visible */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/35 to-slate-950/45" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(217,119,6,0.08),transparent_70%)]" />
 
           {/* Luminous Glow Orbs */}
           <div className="absolute top-1/4 left-10 w-72 h-72 rounded-full bg-amber-500/10 blur-3xl pointer-events-none" />
@@ -127,47 +128,12 @@ export const HomePage = ({ onOpenSiteVisit }) => {
           
           <div className="space-y-4">
             
-            {/* Location Pill */}
-            <motion.div
-              initial={{ opacity: 0, y: -15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="flex justify-center"
-            >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-amber-400/40 text-amber-300 text-xs font-bold shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
-                <span className="font-display uppercase tracking-wider text-amber-300">Prayagraj & Kaushambi</span>
-                <span className="text-amber-400/40">•</span>
-                <span className="text-slate-200 font-medium">100% Verified Gated Plots</span>
-              </div>
-            </motion.div>
-
-            {/* Dynamic Prime Location Highlight */}
-            <div className="h-7 flex items-center justify-center overflow-hidden">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={locIndex}
-                  initial={{ y: 15, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -15, opacity: 0 }}
-                  transition={{ duration: 0.35 }}
-                  className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-lg bg-amber-500/15 border border-amber-400/30 text-xs font-semibold text-amber-200"
-                >
-                  <MapPin className="w-3.5 h-3.5 text-amber-400" />
-                  <span className="font-bold text-amber-300">{HIGHLIGHT_LOCATIONS[locIndex].city}:</span>
-                  <span>{HIGHLIGHT_LOCATIONS[locIndex].name}</span>
-                  <span className="text-amber-400/40 hidden sm:inline">•</span>
-                  <span className="text-slate-300 hidden sm:inline">{HIGHLIGHT_LOCATIONS[locIndex].desc}</span>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
             {/* Clean & Impactful Headline */}
             <motion.h1 
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-5xl md:text-6xl font-display font-black text-white leading-tight"
+              transition={{ duration: 0.6 }}
+              className="text-3xl sm:text-5xl md:text-6xl font-display font-black text-white leading-tight drop-shadow-md"
             >
               Building Your Dream Legacy<br />
               <span className="gold-metallic-text italic font-serif">
@@ -175,23 +141,12 @@ export const HomePage = ({ onOpenSiteVisit }) => {
               </span>
             </motion.h1>
 
-            {/* Crisp, Concise Subtitle */}
-            <motion.p 
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xs sm:text-sm md:text-base text-slate-200 max-w-2xl mx-auto font-sans leading-relaxed"
-            >
-              Prime plots in Prayagraj & Kaushambi with <strong className="text-amber-300 font-semibold">30-40ft Interlocking Roads</strong>, 
-              Bank Loan Approval (SBI/PNB), and <strong className="text-amber-300 font-semibold">100% Guaranteed Registry & Mutation</strong>.
-            </motion.p>
-
             {/* Action Buttons */}
             <motion.div 
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-wrap items-center justify-center gap-3 pt-2"
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="flex flex-wrap items-center justify-center gap-3 pt-3"
             >
               <motion.button
                 whileHover={{ scale: 1.04 }}
@@ -207,7 +162,7 @@ export const HomePage = ({ onOpenSiteVisit }) => {
               <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
                 <Link
                   to="/plot-map"
-                  className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-xl border border-white/25 shadow-md transition-all flex items-center justify-center gap-2 text-xs sm:text-sm"
+                  className="bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-xl border border-white/30 shadow-md transition-all flex items-center justify-center gap-2 text-xs sm:text-sm"
                 >
                   <Compass className="w-4 h-4 text-amber-400" />
                   <span>Live Plot Masterplan</span>
@@ -219,7 +174,7 @@ export const HomePage = ({ onOpenSiteVisit }) => {
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               className="mt-6 max-w-2xl mx-auto"
             >
               <div className="bg-white/95 backdrop-blur-xl rounded-2xl p-3 sm:p-4 border border-amber-400/40 shadow-xl">

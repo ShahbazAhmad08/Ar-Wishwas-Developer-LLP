@@ -17,133 +17,102 @@ export const Hero = ({ onOpenSiteVisit, onSelectSiteForMap }) => {
   };
 
   return (
-    <section className="relative min-h-[75vh] sm:min-h-[80vh] flex flex-col justify-center overflow-hidden bg-[#030712] pt-8 pb-14 border-b border-[#D4AF37]/20">
+    <section className="relative min-h-[75vh] sm:min-h-[80vh] flex flex-col justify-center overflow-hidden bg-slate-950 pt-8 pb-14 border-b border-amber-500/20">
       
       {/* Background Cinematic Atmosphere */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
           alt="Luxury Gated Enclave"
-          className="w-full h-full object-cover object-center opacity-25 scale-105 transition-transform duration-1000"
+          className="w-full h-full object-cover object-center opacity-70 scale-105 transition-transform duration-1000"
         />
-        {/* Multi-layered dark vignette scrim */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-[#050D20]/90 to-[#030712]/80" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(212,175,55,0.12),transparent_70%)]" />
+        {/* Lighter scrim overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/35 to-slate-950/45" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(212,175,55,0.08),transparent_70%)]" />
       </div>
 
       {/* Main Hero Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 w-full text-center">
         
-        {/* Top Trust Ribbon */}
-        <div className="flex justify-center mb-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0E1C38]/90 border border-[#D4AF37]/40 text-[#FCE8B2] text-xs font-semibold tracking-wide shadow-[0_0_20px_rgba(212,175,55,0.15)]">
-            <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-ping" />
-            <span className="font-display font-bold uppercase tracking-widest text-[#D4AF37]">Prayagraj & Kaushambi</span>
-            <span className="text-slate-600">•</span>
-            <span className="text-slate-300">100% Verified Gated Plots</span>
-          </div>
-        </div>
-
-        {/* Main Display Headlines */}
-        <div className="space-y-3">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-display font-extrabold tracking-tight text-white leading-tight">
+        {/* Main Display Headline */}
+        <div className="space-y-4">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-display font-black tracking-tight text-white leading-tight drop-shadow-md">
             Building Your Dream Legacy<br />
             <span className="gold-metallic-text italic font-serif">
               Luxury Gated Society Plots
             </span>
           </h1>
 
-          <p className="text-xs sm:text-sm md:text-base text-slate-300 max-w-2xl mx-auto font-sans font-normal leading-relaxed">
-            Prime plots in Prayagraj & Kaushambi with <strong className="text-[#FCE8B2] font-semibold">30-40ft Interlocking Roads</strong>, 
-            Bank Loan Approval (SBI/PNB), and <strong className="text-[#FCE8B2] font-semibold">100% Guaranteed Registry & Mutation</strong>.
-          </p>
-        </div>
+          {/* Action CTAs */}
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-3">
+            <button
+              onClick={onOpenSiteVisit}
+              className="btn-sheen bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-300 hover:to-amber-500 text-slate-950 font-sans font-black px-6 py-3.5 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 text-xs sm:text-sm tracking-wide cursor-pointer"
+            >
+              <Calendar className="w-4 h-4 text-slate-950" />
+              <span>Schedule Site Visit</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
 
-        {/* Action CTAs */}
-        <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
-          <button
-            onClick={onOpenSiteVisit}
-            className="bg-gradient-to-r from-[#D4AF37] via-[#F59E0B] to-[#C59A08] hover:from-[#FCE8B2] hover:to-[#D4AF37] text-slate-950 font-sans font-black px-6 py-3.5 rounded-xl shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 text-xs sm:text-sm tracking-wide cursor-pointer group"
-          >
-            <Calendar className="w-4 h-4 text-slate-950" />
-            <span>Schedule Site Visit</span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
-
-          <a
-            href="#live-map"
-            className="luxury-glass hover:bg-[#10244D]/80 text-white font-semibold px-6 py-3.5 rounded-xl border border-[#D4AF37]/30 hover:border-[#D4AF37]/60 transition-all flex items-center justify-center gap-2 text-xs sm:text-sm shadow-md cursor-pointer"
-          >
-            <Compass className="w-4 h-4 text-[#D4AF37]" />
-            <span>Interactive Live Plot Map</span>
-          </a>
+            <a
+              href="/plot-map"
+              className="bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-xl border border-white/30 shadow-md transition-all flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer"
+            >
+              <Compass className="w-4 h-4 text-amber-400" />
+              <span>Live Plot Masterplan</span>
+            </a>
+          </div>
         </div>
 
         {/* Interactive Quick Plot Finder Studio Strip */}
-        <div className="mt-14 max-w-4xl mx-auto luxury-glass rounded-3xl p-4 sm:p-5 border border-[#D4AF37]/35 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 items-center">
-            
-            {/* City Selector */}
-            <div className="bg-[#050C1F]/90 rounded-2xl p-3 border border-slate-800">
-              <label className="text-[10px] font-bold uppercase tracking-wider text-[#D4AF37] block mb-1">
-                Preferred Location
-              </label>
-              <select
-                value={selectedCity}
-                onChange={(e) => setSelectedCity(e.target.value)}
-                className="w-full bg-transparent text-xs font-bold text-white focus:outline-none cursor-pointer"
+        <div className="mt-6 max-w-2xl mx-auto">
+          <div className="bg-white/95 backdrop-blur-xl rounded-2xl p-3 sm:p-4 border border-amber-400/40 shadow-xl">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 items-center">
+              
+              {/* City Selector */}
+              <div className="bg-slate-50 rounded-xl p-2.5 border border-slate-200 text-left">
+                <label className="text-[9px] font-bold uppercase tracking-wider text-amber-800 block mb-0.5">
+                  Location
+                </label>
+                <select
+                  value={selectedCity}
+                  onChange={(e) => setSelectedCity(e.target.value)}
+                  className="w-full bg-transparent text-xs font-bold text-slate-900 focus:outline-none cursor-pointer"
+                >
+                  <option value="All">All Locations</option>
+                  <option value="Prayagraj">Prayagraj (Airport & Jhalwa)</option>
+                  <option value="Kaushambi">Kaushambi (Highway & HQ)</option>
+                </select>
+              </div>
+
+              {/* Budget Range Selector */}
+              <div className="bg-slate-50 rounded-xl p-2.5 border border-slate-200 text-left">
+                <label className="text-[9px] font-bold uppercase tracking-wider text-amber-800 block mb-0.5">
+                  Budget
+                </label>
+                <select
+                  value={selectedBudget}
+                  onChange={(e) => setSelectedBudget(e.target.value)}
+                  className="w-full bg-transparent text-xs font-bold text-slate-900 focus:outline-none cursor-pointer"
+                >
+                  <option value="All">All Budgets (₹5L - ₹25L)</option>
+                  <option value="under8">₹5 Lakh - ₹8 Lakh</option>
+                  <option value="8to15">₹8 Lakh - ₹15 Lakh</option>
+                  <option value="above15">₹15 Lakh+</option>
+                </select>
+              </div>
+
+              {/* Submit Filter Button */}
+              <button
+                onClick={handleQuickSearch}
+                className="btn-sheen w-full bg-slate-950 hover:bg-slate-900 text-amber-400 font-bold py-3 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 shadow cursor-pointer transition"
               >
-                <option value="All" className="bg-[#09152e]">All Prime Locations</option>
-                <option value="Prayagraj" className="bg-[#09152e]">Prayagraj (Airport & Jhalwa)</option>
-                <option value="Kaushambi" className="bg-[#09152e]">Kaushambi (Highway & Manjhanpur)</option>
-              </select>
+                <Search className="w-3.5 h-3.5" />
+                <span>Explore Plots</span>
+              </button>
+
             </div>
-
-            {/* Plot Size Selector */}
-            <div className="bg-[#050C1F]/90 rounded-2xl p-3 border border-slate-800">
-              <label className="text-[10px] font-bold uppercase tracking-wider text-[#D4AF37] block mb-1">
-                Plot Size (Gaz / Sq.Yd)
-              </label>
-              <select
-                value={selectedSize}
-                onChange={(e) => setSelectedSize(e.target.value)}
-                className="w-full bg-transparent text-xs font-bold text-white focus:outline-none cursor-pointer"
-              >
-                <option value="All" className="bg-[#09152e]">Any Size (100 - 300 yd)</option>
-                <option value="100" className="bg-[#09152e]">100 sq.yd (900 sq.ft)</option>
-                <option value="150" className="bg-[#09152e]">150 sq.yd (1,350 sq.ft)</option>
-                <option value="200" className="bg-[#09152e]">200 sq.yd (1,800 sq.ft)</option>
-              </select>
-            </div>
-
-            {/* Budget Range Selector */}
-            <div className="bg-[#050C1F]/90 rounded-2xl p-3 border border-slate-800">
-              <label className="text-[10px] font-bold uppercase tracking-wider text-[#D4AF37] block mb-1">
-                Target Budget
-              </label>
-              <select
-                value={selectedBudget}
-                onChange={(e) => setSelectedBudget(e.target.value)}
-                className="w-full bg-transparent text-xs font-bold text-white focus:outline-none cursor-pointer"
-              >
-                <option value="All" className="bg-[#09152e]">All Price Ranges</option>
-                <option value="under8" className="bg-[#09152e]">₹5 Lakh - ₹8 Lakh</option>
-                <option value="8to15" className="bg-[#09152e]">₹8 Lakh - ₹15 Lakh</option>
-                <option value="above15" className="bg-[#09152e]">₹15 Lakh+</option>
-              </select>
-            </div>
-
-            {/* Submit Filter Button */}
-            <button
-              onClick={handleQuickSearch}
-              className="w-full h-full bg-gradient-to-r from-[#D4AF37] to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold py-3.5 px-4 rounded-2xl text-xs flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-102 cursor-pointer"
-            >
-              <Search className="w-4 h-4" />
-              <span>Explore Plots</span>
-            </button>
-
           </div>
-        </div>
 
         {/* Live Status Indicators Ticker */}
         <div className="mt-8 flex flex-wrap justify-center items-center gap-6 text-xs text-slate-400">

@@ -71,28 +71,32 @@ export const AboutPage = ({ onOpenSiteVisit }) => {
 
   const guarantees = [
     {
-      icon: FileCheck2,
       title: "100% Revenue Mutation & Legal Title Guarantee",
       desc: "Our land parcels are rigorously verified through UP Revenue Department official records. Registry is executed directly on state stamp papers with immediate revenue mutation into the buyer's name.",
-      badge: "Online Verifiable"
+      badge: "Online Verifiable",
+      image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80",
+      tag: "Stamp Paper Deed"
     },
     {
-      icon: ShieldCheck,
       title: "Section 143 / 80 Residential Cleared",
       desc: "All projects are officially approved for non-agricultural residential purposes under UP Revenue Code. Complete peace of mind for house construction and municipal approvals.",
-      badge: "Non-Agri Approved"
+      badge: "Non-Agri Approved",
+      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80",
+      tag: "Govt Order 143"
     },
     {
-      icon: Landmark,
       title: "Nationalized Bank Loan Approval",
       desc: "State Bank of India, Punjab National Bank, HDFC Bank, and Bank of Baroda have pre-inspected and approved our gated society layouts with up to 80% financing options.",
-      badge: "Pre-Inspected"
+      badge: "Pre-Inspected",
+      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80",
+      tag: "SBI / PNB Sanction"
     },
     {
-      icon: Lock,
       title: "Day-One Possession & Pillar Demarcation",
       desc: "Concrete demarcation pillars with plot number tagging are installed on spot upon token booking. Full access via 30ft and 40ft wide interlocking roads.",
-      badge: "Physical Possession"
+      badge: "Physical Possession",
+      image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80",
+      tag: "Boundary Pillars"
     }
   ];
 
@@ -308,28 +312,42 @@ export const AboutPage = ({ onOpenSiteVisit }) => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {guarantees.map((item, idx) => {
-              const IconComp = item.icon;
-              return (
-                <div key={idx} className="luxury-card-bright p-7 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3.5 bg-amber-50 text-amber-700 rounded-2xl border border-amber-200 flex-shrink-0 shadow-sm">
-                      <IconComp className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <div className="flex items-center justify-between gap-2 mb-1.5">
-                        <h3 className="text-base font-display font-bold text-slate-900">{item.title}</h3>
-                      </div>
-                      <p className="text-xs text-slate-600 leading-relaxed font-sans">{item.desc}</p>
-                    </div>
+            {guarantees.map((item, idx) => (
+              <div key={idx} className="luxury-card-bright p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between group hover:border-amber-400/60 hover:shadow-md transition-all duration-300">
+                <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-5">
+                  {/* Real Document / Verification Image replacing icon/logo */}
+                  <div className="relative w-full sm:w-28 h-36 sm:h-28 rounded-2xl overflow-hidden border-2 border-amber-300/80 shadow-md flex-shrink-0 bg-slate-100">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent sm:hidden" />
+                    <span className="absolute bottom-1.5 left-2 text-[9px] font-mono font-bold text-amber-300 bg-slate-900/80 px-1.5 py-0.5 rounded sm:hidden">
+                      {item.tag}
+                    </span>
                   </div>
-                  <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-emerald-600">
-                    <span className="flex items-center gap-1"><Check className="w-3.5 h-3.5" /> 100% Certified on Paper</span>
-                    <span className="bg-emerald-50 text-emerald-700 px-2.5 py-0.5 rounded-full border border-emerald-200 text-[10px]">{item.badge}</span>
+
+                  {/* Content */}
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between gap-2 mb-1.5">
+                      <h3 className="text-base font-display font-bold text-slate-900 leading-snug">{item.title}</h3>
+                    </div>
+                    <p className="text-xs text-slate-600 leading-relaxed font-sans">{item.desc}</p>
+                    {item.tag && (
+                      <span className="hidden sm:inline-block mt-2.5 text-[10px] font-mono font-bold text-amber-800 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-md">
+                        {item.tag}
+                      </span>
+                    )}
                   </div>
                 </div>
-              );
-            })}
+
+                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-emerald-600">
+                  <span className="flex items-center gap-1"><Check className="w-3.5 h-3.5" /> 100% Certified on Paper</span>
+                  <span className="bg-emerald-50 text-emerald-700 px-2.5 py-0.5 rounded-full border border-emerald-200 text-[10px]">{item.badge}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
