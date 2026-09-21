@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BrandLogo } from './BrandLogo';
 import { COMPANY_INFO } from '../data/sitesData';
-import { Phone, Mail, MapPin, Shield } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 export const Footer = ({ onOpenSiteVisit }) => {
   return (
@@ -12,18 +11,17 @@ export const Footer = ({ onOpenSiteVisit }) => {
         {/* 4-Columns Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
           
-          {/* Brand Info */}
-          <div className="space-y-4">
-            <div className="bg-white p-2.5 rounded-2xl inline-block shadow-sm">
-              <BrandLogo size="md" showTagline={false} />
-            </div>
-            <p className="text-xs text-slate-300 leading-relaxed font-sans pt-1">
-              Prayagraj & Kaushambi's trusted plotted township developer. 100% Verified Land Title, Section 143 Approved, and Instant Possession with Up to 80% Bank Finance.
-            </p>
-            <div className="flex items-center gap-2 text-[11px] text-amber-400 font-semibold">
-              <Shield className="w-4 h-4 text-emerald-400" />
-              <span>Registered LLP • 100% Legal Guarantee</span>
-            </div>
+          {/* Brand Logo Only */}
+          <div className="flex flex-col justify-start">
+            <Link to="/" className="inline-block group">
+              <div className="w-48 sm:w-56 rounded-2xl overflow-hidden border border-amber-500/30 bg-black p-2 shadow-[0_4px_20px_rgba(217,119,6,0.15)] group-hover:border-amber-400/70 group-hover:shadow-[0_4px_25px_rgba(217,119,6,0.3)] transition-all duration-300">
+                <img
+                  src="/logo.jpeg"
+                  alt="Ar Wishwas Developer LLP"
+                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            </Link>
           </div>
 
           {/* Quick Page Links */}

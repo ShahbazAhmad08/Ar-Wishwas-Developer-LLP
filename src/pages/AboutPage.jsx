@@ -15,7 +15,7 @@ export const AboutPage = ({ onOpenSiteVisit }) => {
       certNumber: "UP-REV/2024/SEC143-CLR/PRG",
       sealText: "OFFICIALLY CONVERTED • 100% RESIDENTIAL",
       desc: "Formal conversion from agricultural to non-agricultural residential category under UP Revenue Code Section 143 / 80. Enables immediate map sanction and residential villa construction without penalty.",
-      image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80",
+      image: "/facilities/legal.jfif",
       highlights: [
         "100% Safe from Government acquisition",
         "Clear freehold residential status",

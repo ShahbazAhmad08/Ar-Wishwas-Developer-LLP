@@ -98,7 +98,7 @@ export const CORE_AMENITIES = [
     icon: "FileCheck",
     title: "Immediate Registry & Revenue Mutation",
     desc: "100% clear title, Section 143 non-agricultural certified, instant registry upon final payment.",
-    image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80",
+    image: "/facilities/legal.jfif",
     badge: "100% Legal"
   }
 ];
